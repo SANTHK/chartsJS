@@ -1,0 +1,29 @@
+<main>
+    <div class="container-fluid">
+        <div class="row justify-content-center pt-4">
+            <div class="col-sm-3">
+                <app-card [routerLink]="['charts']" [state]="{type:'area'}">
+                    <h5 class="card-title text-center">Area Chart</h5>
+                </app-card>
+            </div>
+            <div class="col-sm-3">
+                <app-card><h5 class="card-title text-center">Line Chart</h5></app-card>
+            </div>
+            <div class="col-sm-3">
+                <app-card><h5 class="card-title text-center">Horizontal Bar Chart</h5></app-card>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-4">
+            <div class="col-sm-3">
+                <app-card><h5 class="card-title text-center">Vertical Bar Chart</h5></app-card>
+            </div>
+            <div class="col-sm-3">
+                <app-card><h5 class="card-title text-center">Pie Chart</h5></app-card>
+            </div>
+            <div class="col-sm-3">
+                <app-card><h5 class="card-title text-center">Doughnut Chart</h5></app-card>
+            </div>
+        </div>
+    </div>
+</main>
+<router-outlet></router-outlet>

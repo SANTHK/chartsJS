@@ -1,0 +1,33 @@
+<main>
+  <div class="container-fluid">
+    <div class="card mt-4">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}">Bar Chart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="line">Line Chart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="pie">Pie Chart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="doughnut">Doughnut Chart</a>
+          </li>
+        </ul>
+          
+      </div>
+      <div class="card-body">
+        <div class="canvas">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Updated 2 days ago
+      </div>
+    </div>
+  </div>
+</main>
+
+
